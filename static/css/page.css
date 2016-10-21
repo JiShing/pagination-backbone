@@ -1,0 +1,32 @@
+.pagination{
+	display: flex;
+	direction: -webkit-flex;
+	align-items: baseline;
+}
+.quick-jump{
+	display: flex;
+	direction: -webkit-flex;
+}
+.quick-jump .go-to{
+	width: 20px;
+}
+.quick-jump .confirm:hover{
+	cursor: pointer;
+}
+.page-jump{
+	display: flex;
+	direction: -webkit-flex;
+}
+.page-jump .num{
+	border: 0.5px solid;
+	border-radius: 2px;
+}
+.page-jump .cur{
+	color: red;
+}
+.page-jump .prev:hover{
+	cursor: pointer;
+}
+.page-jump .next:hover{
+	cursor: pointer;
+}

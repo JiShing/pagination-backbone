@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagination</title>
+    <link rel="stylesheet" href="static/css/page.css">
+</head>
+<body>
+    <div class="pagination"></div>
+    <!-- <script data-main="static/js/main.js" src="static/js/lib/require.js"></script> -->
+    <script type="text/javascript" src="static/js/lib/require.js"></script>
+    <script type="text/javascript" src="static/result.js"></script>
+    <script type="text/template" id="pagination-template">
+        <div class="quick-jump">
+            到第<input type="text" class="go-to" value="<%= current %>">页
+            <span class="confirm">确定</span>
+        </div>
+        <div class="page-jump">
+            <% var min = current - 3; %>
+            <% var max = current + 3; %>
+            <% var cursor = 2; %>
+            <% if(current > 1){ %>
+            <span class="prev">上一页</span>
+            <% } %>
+            <% if(total > 1){ %>
+            <span class="num<%if(current==1){%> cur<%}%>">1</span>
+            <% if(min > 2){ %>
+            <span>...</span>
+            <% cursor = min; %>
+            <% } %>
+            <% for(; cursor <= max && cursor < total; cursor ++){ %>
+            <span class="num<%if(current==cursor){%> cur<%}%>"><%= cursor %></span>
+            <% } %>
+            <% if(cursor < total){ %>
+            <span>...</span>
+            <% } %>
+            <span class="num<%if(current==total){%> cur<%}%>"><%= total %></span>
+            <% if(current < total){ %>
+            <span class="next">下一页</span>
+            <% } %>
+            <% } %>
+        </div>
+    </script>
+</body>
+</html>

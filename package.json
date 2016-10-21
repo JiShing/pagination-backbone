@@ -1,0 +1,30 @@
+{
+  "name": "pagination-backbone",
+  "version": "1.0.0",
+  "description": "page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JiShing/pagination-backbone.git"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "JiHan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JiShing/pagination-backbone/issues"
+  },
+  "homepage": "https://github.com/JiShing/pagination-backbone#readme",
+  "devDependencies": {
+    "amd-optimize": "^0.6.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "gulp-util": "^3.0.7"
+  }
+}
